@@ -1,0 +1,30 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 20px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  z-index: 50;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.02);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link {
+  color: #aeb4ba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__link.active {
+  color: #2e363e;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chats - Kokoa Clone</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column"><span>SKT</span><i class="fas fa-wifi"></i></div>
+    <div class="status-bar__column"><span>18:43</span></div>
+    <div class="status-bar__column"><span>90%</span><i class="fas fa-battery-full fa-lg"></i><i class="fas fa-bolt"></i></div>
+  </div>
+
+  <header class="screen-header">
+    <h1 class="screen-header__title">Chats</h1>
+    <div class="screen-header__icons">
+      <span><i class="fas fa-search"></i></span>
+      <span><i class="fas fa-comment-medical"></i></span>
+      <span><i class="fas fa-music"></i></span>
+      <span><a href="settings.html"><i class="fas fa-cog"></i></a></span>
+    </div>
+  </header>
+
+  <main class="chats-screen">
+    <a href="chat.html" class="user-row">
+      <img src="https://avatars.githubusercontent.com/u/9919" class="avatar" />
+      <div class="user-info">
+        <span class="user-name">GitHub</span>
+        <span class="user-status">Did you push your code?</span>
+      </div>
+      <div class="chat-meta">
+        <span class="chat-time">21:22</span>
+        <div class="chat-badge">1</div>
+      </div>
+    </a>
+  </main>
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a></li>
+      <li class="nav__btn"><a class="nav__link active" href="chats.html"><i class="fas fa-comment fa-2x"></i></a></li>
+      <li class="nav__btn"><a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a></li>
+      <li class="nav__btn"><a class="nav__link" href="more.html"><i class="fas fa-ellipsis-h fa-2x"></i></a></li>
+    </ul>
+  </nav>
+</body>
+</html>

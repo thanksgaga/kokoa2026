@@ -1,0 +1,135 @@
+#chat-room {
+  background-color: #abc1d1;
+}
+
+#chat-room .screen-header {
+  background-color: rgba(171, 193, 209, 0.85);
+  border-bottom: none;
+}
+
+.chat-screen {
+  padding-bottom: 80px; /* Space for the reply bar */
+}
+
+.chat__timestamp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin: 15px auto 30px;
+  width: fit-content;
+}
+
+.message-row {
+  display: flex;
+  margin-bottom: 25px;
+  padding: 0 20px;
+}
+
+.message-row img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.message__author {
+  display: block;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 5px;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.message__bubble {
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  font-size: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.message__time {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+.message-row--own .message__bubble {
+  background: linear-gradient(135deg, #fae100, #ffc900);
+  border-radius: 15px;
+  border-top-right-radius: 0;
+}
+
+.reply-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  gap: 15px;
+  padding-bottom: env(safe-area-inset-bottom, 20px);
+}
+
+.reply-bar input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 0 40px 0 15px;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.reply-bar input:focus {
+  outline: none;
+  border-color: #fae100;
+  box-shadow: 0 0 10px rgba(250, 225, 0, 0.3);
+}
+
+.reply-bar__column:last-child {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.reply-bar__column i.fa-smile-wink {
+  position: absolute;
+  right: 50px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.reply-bar__column button {
+  position: absolute;
+  right: 5px;
+  background-color: #fae100;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

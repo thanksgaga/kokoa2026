@@ -1,0 +1,27 @@
+.more-screen {
+  padding: 0 20px;
+}
+
+.more-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px 15px;
+  margin-top: 30px;
+}
+
+.more-grid__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.more-grid__item i {
+  font-size: 32px;
+  color: #2e363e;
+}
+
+.more-grid__item span {
+  font-size: 13px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>로그인 - 코코아톡</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Font Awesome CDN (아이콘 라이브러리) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body id="login">
+  <!-- 1. 공통 상단 상태바 (Status Bar) -->
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>SKT</span>
+      <i class="fas fa-wifi"></i>
+    </div>
+    <div class="status-bar__column">
+      <span>18:43</span>
+    </div>
+    <div class="status-bar__column">
+      <span>90%</span>
+      <i class="fas fa-battery-full fa-lg"></i>
+      <i class="fas fa-bolt"></i>
+    </div>
+  </div>
+
+  <!-- 2. 로그인 화면 메인 헤더 -->
+  <header class="welcome-header">
+    <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+    <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
+  </header>
+
+  <!-- 3. 로그인 폼 -->
+  <form id="login-form" action="friends.html">
+    <input type="text" placeholder="Email or phone number" required />
+    <input type="password" placeholder="Password" required />
+    <input type="submit" value="Log In" />
+    <a href="#">Find Kokoa Account or Password</a>
+  </form>
+
+  <!-- 4. 스플래시 화면 (앱 처음 켰을 때 나오는 화면) -->
+  <div id="splash-screen">
+    <i class="fas fa-comment"></i>
+  </div>
+</body>
+
+</html>

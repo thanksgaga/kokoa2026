@@ -1,0 +1,31 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 10;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.screen-header__title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2e363e;
+  letter-spacing: -0.5px;
+}
+
+.screen-header__icons {
+  display: flex;
+  gap: 20px;
+}
+
+.screen-header__icons span {
+  cursor: pointer;
+  color: #2e363e;
+  font-size: 22px;
+}
